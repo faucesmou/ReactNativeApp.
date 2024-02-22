@@ -15,7 +15,7 @@ export const Pagina1Screen = (  { navigation } : Props ) => {
     <View style ={ styles.globalMargin }>
         
         <Text style= {styles.title}>
-        Pagina1Screen
+        Pagina1Screen ke hace padre
         </Text>
         <Button
             title=' Ir a pagina 2'
