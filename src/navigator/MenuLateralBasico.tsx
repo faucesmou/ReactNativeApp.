@@ -1,10 +1,10 @@
 /* import React from 'react'; */
 
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { StackNavigator } from './StackNavigator';
+//import { createDrawerNavigator } from '@react-navigation/drawer';
+/* import { StackNavigator } from './StackNavigator';
 import { SettingsScreen } from '../screens/SettingsScreen';
 
-const Drawer = createDrawerNavigator();
+//const Drawer = createDrawerNavigator();
 
 export const MenuLateralBasico = () => {
   return (
@@ -13,4 +13,4 @@ export const MenuLateralBasico = () => {
       <Drawer.Screen name="SettingsScreen" component={ SettingsScreen } />
     </Drawer.Navigator>
   );
-} 
+}  */
