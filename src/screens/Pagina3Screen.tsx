@@ -10,11 +10,11 @@ interface Props extends StackScreenProps<any, any> {};
 
 export const Pagina3Screen = ( { navigation } : Props ) => {
 
-navigation.dispatch ( 
+/* navigation.dispatch ( 
   StackActions.replace('Profile', {
     user: 'jane',
   })
-)
+) */
   return (
     <View style={ styles.globalMargin }>
         
@@ -23,13 +23,21 @@ navigation.dispatch (
         </Text>
 
         <Button
+            title=' Regresar'
+            onPress={ () => navigation.navigate(/* 'Pagina2Screen' */'Tab2Screen')}
+        />
+        <Button
+            title=' Ir a Tab1Screen'
+            onPress={ () => navigation.navigate(/* 'Pagina2Screen' */'Tab1Screen')}
+        />
+    {/*     <Button
             title = "Regresar"
             onPress={ () => navigation.pop()} 
         />
         <Button
             title = "ir a pagina 1"
             onPress={ () => navigation.popToTop()} 
-        />
+        /> */}
 
     </View>
   )
