@@ -38,8 +38,8 @@ export const StackNavigator = () => {
 {/*       <Stack.Screen name="Pagina1Screen" options={{ title: "Pagina1" }} component={ Pagina1Screen } />
       <Stack.Screen name="Pagina2Screen" options={{ title: "Pagina3" }} component={ Pagina2Screen} />
       <Stack.Screen name="Pagina3Screen" options={{ title: "Pagina3" }} component={ Pagina3Screen } />
-      <Stack.Screen name="PersonaScreen" options={{ title: "PersonaScreen" }} component={ PersonaScreen } /> */}
-
+    <Stack.Screen name="PersonaScreen" options={{ title: "PersonaScreen" }} component={ PersonaScreen } /> */}
+<Stack.Screen name="PersonaScreen" options={{ title: "PersonaScreen" }} component={ PersonaScreen } /> 
     </Stack.Navigator>
   );
 }

@@ -19,7 +19,7 @@ navigation.dispatch (
     <View style={ styles.globalMargin }>
         
         <Text style= {styles.title}>
-        Pagina3 WACHO 
+        Pagina3Screen tuiterr
         </Text>
 
         <Button
