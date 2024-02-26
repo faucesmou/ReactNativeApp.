@@ -1,8 +1,11 @@
 import { StackScreenProps } from '@react-navigation/stack'
 import { StackActions } from '@react-navigation/native'; 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import React from 'react'
 import { Button, Text, View } from 'react-native'
-import { styles } from '../theme/appTheme'
+import { colores, styles } from '../theme/appTheme'
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 interface Props extends StackScreenProps<any, any> {};
 
@@ -15,8 +18,14 @@ export const Pagina3Screen = ( { navigation } : Props ) => {
     user: 'jane',
   })
 ) */
+
+
+ const { top } = useSafeAreaInsets();
   return (
-    <View style={ styles.globalMargin }>
+    <View style={ {
+      ...styles.globalMargin,
+      marginTop: top
+     }}>
         
         <Text style= {styles.title}>
         Pagina3Screen tuiterr
@@ -30,7 +39,21 @@ export const Pagina3Screen = ( { navigation } : Props ) => {
             title=' Ir a Tab1Screen'
             onPress={ () => navigation.navigate(/* 'Pagina2Screen' */'Tab1Screen')}
         />
-    {/*     <Button
+
+<Text>
+<Text style= {styles.title}>
+        Iconos
+        </Text>
+      
+        <Icon name="accessibility-outline" size={40} color={ colores.primary } />
+        <Icon name="airplane-outline" size={40} color="#900" />
+        <Icon name="accessibility-outline" size={40} color={ colores.primary } />
+        <Icon name="airplane-outline" size={40} color="#900" />
+        <Icon name="accessibility-outline" size={40} color={ colores.primary } />
+        <Icon name="airplane-outline" size={40} color="#900" />
+
+        </Text>
+    {/*     <Button∫
             title = "Regresar"
             onPress={ () => navigation.pop()} 
         />

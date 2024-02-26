@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Platform, Text } from 'react-native';
 /* import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'; */
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { Tab1Screen } from '../screens/Tab1Screen';
 import { Tab2Screen } from '../screens/Tab2Screen';
@@ -36,7 +37,7 @@ const TabsAndroid = () => {
   return (
     <BottomTabAndroid.Navigator 
     initialRouteName="Home"
-    activeColor='white'/* "#f0edf6" */
+    activeColor='blue'/* "#f0edf6" */
     inactiveColor="#3e2465"
     barStyle={{ backgroundColor: colores.primary/* 'blue' */ /* '#694fad' */ }}/* color de fondo del tab bottom  */
  /*  esto no funciona  tabBarOptions={{
@@ -46,32 +47,31 @@ const TabsAndroid = () => {
     }} */
     screenOptions={({ route })=> ({
 
-
+      tabBarLabelStyle: {
+        fontSize: 35,/* esto no funciona */
+      },
       tabBarIcon: ( color, ) => {
         console.log(route.name)
         let iconName: string = '';
         switch( route.name ) {
           case 'Tab1Screen':
-            iconName= 'T1'
+            iconName= 'mail-unread-outline'
             break;
           case 'Tab2Screen':
-            iconName= 'T2'
+            iconName= 'airplane-outline'
             break;
           case 'Tab3Screen':
-            iconName= 'StA'
+            iconName= 'accessibility-outline'
             break;   
         }
-        return <Text /* style= {{ color }} */>{ iconName }</Text>
+        return <Icon name={ iconName }  size={35} color={ colores.blanco } />
       }
-       ,
-      tabBarLabelStyle: {
-        fontSize: 25,
-      },/* esto  deberìa funcionar pero no lo hace....*/
+       
     })}
 
     >
-        <BottomTabAndroid.Screen name="Tab1Screen" options= {{ title: 'Tab1'}}  component={ Pagina1Screen } />   
-      <BottomTabAndroid.Screen name="Tab2Screen" options= {{ title: 'TopTabNavigator'}} component={ TopTabNavigator } />
+        <BottomTabAndroid.Screen name="Tab1Screen" options= {{ title: 'Correo'}}  component={ Pagina1Screen } />   
+      <BottomTabAndroid.Screen name="Tab2Screen" options= {{ title: 'Navegacion'}} component={ TopTabNavigator } />
       <BottomTabAndroid.Screen name="Tab3Screen" options= {{ title: 'Tab3'}} component={ Pagina3Screen } />
     </BottomTabAndroid.Navigator>
     
@@ -130,7 +130,7 @@ const TabsIOS = () => {
             break;    
         }
 
-        return <Text /* style= {{ color }} */>{ iconName }</Text>
+        return <Icon name={ iconName } size={20} color={ colores.primary } />
       }
     })}
  /*   El curso usa 'tabBarOptions' pero està deprecado y se la app recomienda usar 'screenOptions' que es el que uso arriba. tabBarOptions={{ 

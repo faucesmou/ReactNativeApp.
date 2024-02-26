@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import { Text, View } from 'react-native'
+
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import { createStackNavigator } from '@react-navigation/stack';
 import { Pagina1Screen } from './Pagina1Screen';
 import { Pagina2Screen } from './Pagina2Screen';

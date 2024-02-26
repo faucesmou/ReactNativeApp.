@@ -2,7 +2,22 @@ import { StyleSheet } from "react-native";
 
 export const colores = {
     primary: '#5856D6',
+    blanco: 'white',
     
+}
+export const tamaños = {
+    pequeño: {
+        fontSize: 10, // Ajusta según tus necesidades
+        // Otros estilos si es necesario
+      },
+      mediano: {
+        fontSize: 15, // Ajusta según tus necesidades
+        // Otros estilos si es necesario
+      },
+    grande: {
+        fontSize: 40, // Ajusta según tus necesidades
+        // Otros estilos si es necesario
+      },    
 }
 
 
