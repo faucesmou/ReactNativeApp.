@@ -15,11 +15,11 @@ export const Pagina1Screen = (  { navigation } : Props ) => {
     <View style ={ styles.globalMargin }>
         
         <Text style= {styles.title}>
-        Pagina1Screen kapo
+        Pagina1Screen kapo ee
         </Text>
         <Button
-            title=' Ir a Tab2Screen'
-            onPress={ () => navigation.navigate(/* 'Pagina2Screen' */'Tab2Screen')}
+            title=' Ir a TopTabNavigator'
+            onPress={ () => navigation.navigate( 'TopTabNavigator'/* 'Pagina2Screen' *//* 'Tab2Screen' */)}
         />
 
 
