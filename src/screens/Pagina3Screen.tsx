@@ -28,7 +28,7 @@ export const Pagina3Screen = ( { navigation } : Props ) => {
      }}>
         
         <Text style= {styles.title}>
-        Pagina3Screen tuiterr
+        Pagina3Screen tuiterr e guacho vamo arriba
         </Text>
 
         <Button

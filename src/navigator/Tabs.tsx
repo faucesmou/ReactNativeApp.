@@ -120,13 +120,13 @@ const TabsIOS = () => {
         let iconName: string = '';
         switch( route.name ) {
           case 'Tab1Screen':
-            iconName= 'T1'
+            iconName= 'mail-unread-outline'
             break;
           case 'TopTabNavigator':
-            iconName= 'T2'
+            iconName= 'airplane-outline'
             break;
           case 'Tab3Screen':
-            iconName= 'StIO'
+            iconName= 'accessibility-outline'
             break;    
         }
 
